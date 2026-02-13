@@ -1,0 +1,121 @@
+/* ===== GLOBAL STYLES ===== */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 40px 20px;
+}
+
+/* ===== MAIN CONTAINER ===== */
+
+.app {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* ===== INPUT SECTION ===== */
+
+.ingredient-form {
+  margin-bottom: 20px;
+}
+
+.ingredient-form input {
+  padding: 10px;
+  width: 60%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.ingredient-form button {
+  padding: 10px 16px;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #ffffff;
+  color: #764ba2;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.ingredient-form button:hover {
+  background: #f1f1f1;
+  transform: translateY(-2px);
+}
+
+/* ===== FILTERS ===== */
+
+.filters {
+  margin: 20px 0;
+}
+
+.filters select {
+  margin: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* ===== RECIPE CARDS ===== */
+
+.recipes-container {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.recipe-card {
+  background: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card h3 {
+  margin-top: 0;
+  color: #764ba2;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .ingredient-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .ingredient-form button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.rating {
+  margin-top: 10px;
+}
