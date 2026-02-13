@@ -33,7 +33,7 @@ function IngredientInput({ onSearch }) {
     formData.append("image", file);
 
     try {
-      const response = await fetch("http://localhost:5000/analyze", {
+      const response = await fetch("https://smart-recipe-generator-nj8q.onrender.com/analyze", {
         method: "POST",
         body: formData,
       });
